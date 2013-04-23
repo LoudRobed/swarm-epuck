@@ -1,0 +1,11 @@
+
+
+class test():
+
+    def one():
+        return 1
+    def two():
+        return 2
+t = test()
+args = [t.one(),t.two()]
+print args[0]

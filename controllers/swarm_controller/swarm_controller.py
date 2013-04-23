@@ -9,6 +9,7 @@ from search import Search
 
 class swarm_controller (epb.EpuckBasic):
   def __init__(self):
+    
     super(swarm_controller, self).__init__()
     self.basic_setup()
    # SearchObject = Search()
@@ -38,7 +39,7 @@ class swarm_controller (epb.EpuckBasic):
         speeds = output1[1]
         self.move_wheels(speeds[0],speeds[1],1.0)
       else:
-        self.backward()
+        self.stop()
       #Search.determine_action(True)
       #Stagnation.determine_action(True)
       
